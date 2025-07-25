@@ -55,6 +55,10 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
 
+    &__box {  
+      padding-top: 32px;
+    }
+
     &__item {
       grid-column: 1 / -1;
       height: 375px;
@@ -276,9 +280,11 @@
     }
   }
 
-  .product-box__title {
+  .product-box__basket-title {
     margin-top: 48px;
     margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 29px;
   }
 
   .link-boxer {
@@ -289,5 +295,9 @@
     &__link-mobile {
       display: block;
     }
+  }
+
+  .link-boxer-basket {  
+    margin-bottom: 32px;
   }
 }

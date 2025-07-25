@@ -29,13 +29,13 @@ $color-text-black: rgb(0, 0, 0);
 
   &__content {
     grid-column: span 8;
-    max-height: 556px;
   }
 
   &__name-box {
     display: flex;
     justify-content: space-between;
     padding-bottom: 14px;
+    max-width: 756px;
   }
 
   &__item {
@@ -99,11 +99,12 @@ $color-text-black: rgb(0, 0, 0);
       line-height: 210%;
       letter-spacing: 0;
       text-align: center;
-      text-decoration-line: none;
+      text-decoration-line: underline;
     }
 
     .link__link:hover {
-      text-decoration: underline;
+      text-decoration: none;
+      color: rgb(136, 136, 136);
     }
   }
 
@@ -217,6 +218,10 @@ $color-text-black: rgb(0, 0, 0);
       padding-bottom: 18px;
     }
 
+    .highlight {  
+      font-weight: 400; 
+    }
+
     .form__button-block {
       display: flex;
       justify-content: center;
@@ -257,11 +262,12 @@ $color-text-black: rgb(0, 0, 0);
     line-height: 24px;
     letter-spacing: 0;
     text-align: left;
-    text-decoration: none;
+    text-decoration: underline;
   }
 
   &__link:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: rgb(136, 136, 136);
   }
 
   &__link-mobile {
@@ -271,16 +277,28 @@ $color-text-black: rgb(0, 0, 0);
     line-height: 24px;
     letter-spacing: 0;
     text-align: left;
-    text-decoration: none;
+    text-decoration: underline;
     display: none;
   }
 
   &__link-mobile:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    column-rule: rgb(136, 136, 136);
   }
 
   &-basket {
     margin-top: 32px;
     margin-bottom: 65px;
   }
+}
+
+.product-box__basket-title {  
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  margin-bottom: 32px;
+  margin-top: 64px;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0;
+  text-align: left;
 }

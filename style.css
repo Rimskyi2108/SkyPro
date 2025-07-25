@@ -173,7 +173,6 @@ body {
 
 .product__box {
   box-sizing: border-box;
-  margin-top: 64px;
 }
 
 .product-box__title {
@@ -268,10 +267,11 @@ body {
   line-height: 24px;
   letter-spacing: 0;
   text-align: left;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .link-box__link:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: rgb(136, 136, 136);
 }
 
 .footer {
@@ -318,6 +318,7 @@ body {
   align-content: flex-start;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 12px;
 }
 .footer__item-title {
   color: rgb(0, 0, 0);
@@ -334,6 +335,7 @@ body {
   flex-wrap: wrap;
   align-content: space-between;
   align-items: flex-start;
+  gap: 12px;
 }
 .footer__menu-link {
   color: rgb(136, 136, 136);
@@ -343,8 +345,6 @@ body {
   letter-spacing: 0;
   text-align: left;
   text-decoration: none;
-  margin-top: 12px;
-  margin-bottom: 12px;
 }
 .footer__menu-link:hover {
   text-decoration: underline;
@@ -360,6 +360,7 @@ body {
   align-content: flex-start;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 12px;
 }
 .footer__item2-title {
   color: rgb(0, 0, 0);
@@ -377,14 +378,12 @@ body {
   letter-spacing: 0;
   text-align: left;
   text-decoration: none;
-  margin-top: 6px;
-  margin-bottom: 6px;
 }
 .footer__item2-link:hover {
   text-decoration: underline;
 }
 .footer__icons {
-  margin-top: 6px;
+  margin-top: 14px;
 }
 .footer__icons-link1 {
   padding-right: 15px;
@@ -973,11 +972,12 @@ body {
   text-align: left;
   margin-top: 32px;
   margin-bottom: 64px;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .more:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: rgb(136, 136, 136);
 }
 
 .top-basket {
@@ -1007,12 +1007,12 @@ body {
 }
 .basket__content {
   grid-column: span 8;
-  max-height: 556px;
 }
 .basket__name-box {
   display: flex;
   justify-content: space-between;
   padding-bottom: 14px;
+  max-width: 756px;
 }
 .basket__item {
   border-top: 0.5px solid rgb(202, 205, 216);
@@ -1069,10 +1069,11 @@ body {
   line-height: 210%;
   letter-spacing: 0;
   text-align: center;
-  text-decoration-line: none;
+  text-decoration-line: underline;
 }
 .basket__link .link__link:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: rgb(136, 136, 136);
 }
 .basket__input {
   width: 71px;
@@ -1183,6 +1184,9 @@ body {
   padding-top: 64.5px;
   padding-bottom: 18px;
 }
+.basket__form .highlight {
+  font-weight: 400;
+}
 .basket__form .form__button-block {
   display: flex;
   justify-content: center;
@@ -1217,10 +1221,11 @@ body {
   line-height: 24px;
   letter-spacing: 0;
   text-align: left;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .link-boxer__link:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: rgb(136, 136, 136);
 }
 .link-boxer__link-mobile {
   color: rgb(0, 0, 0);
@@ -1229,15 +1234,28 @@ body {
   line-height: 24px;
   letter-spacing: 0;
   text-align: left;
-  text-decoration: none;
+  text-decoration: underline;
   display: none;
 }
 .link-boxer__link-mobile:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  -moz-column-rule: rgb(136, 136, 136);
+       column-rule: rgb(136, 136, 136);
 }
 .link-boxer-basket {
   margin-top: 32px;
   margin-bottom: 65px;
+}
+
+.product-box__basket-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  margin-bottom: 32px;
+  margin-top: 64px;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0;
+  text-align: left;
 }
 
 @media (max-width: 1024px) {
@@ -1280,6 +1298,12 @@ body {
   .filtering-form {
     top: 55px;
     left: -123px;
+  }
+}
+@media (min-width: 834px) and (max-width: 877px) {
+  .filtering-form {
+    top: 55px;
+    left: -150px;
   }
 }
 @media (min-width: 768px) and (max-width: 833px) {
@@ -1348,6 +1372,9 @@ body {
   .for {
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
+  }
+  .for__box {
+    padding-top: 32px;
   }
   .for__item {
     grid-column: 1/-1;
@@ -1521,14 +1548,19 @@ body {
     margin-top: 48px;
     width: 343px;
   }
-  .product-box__title {
+  .product-box__basket-title {
     margin-top: 48px;
     margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 29px;
   }
   .link-boxer__link {
     display: none;
   }
   .link-boxer__link-mobile {
     display: block;
+  }
+  .link-boxer-basket {
+    margin-bottom: 32px;
   }
 }/*# sourceMappingURL=style.css.map */

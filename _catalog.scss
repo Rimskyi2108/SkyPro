@@ -574,9 +574,10 @@
   text-align: left;
   margin-top: 32px;
   margin-bottom: 64px;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .more:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: rgb(136, 136, 136);
 }

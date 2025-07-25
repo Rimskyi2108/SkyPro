@@ -50,6 +50,14 @@
   .filtering-form {
     top: 55px;
     left: -123px;
+    
+  }
+}
+
+@media (min-width: 834px) and (max-width: 877px) {
+  .filtering-form {
+    top: 55px;
+    left: -150px;
   }
 }
 
